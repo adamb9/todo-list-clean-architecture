@@ -1,0 +1,8 @@
+include ':app-core'
+include ':business'
+include ':data-access'
+include ':data-bridge'
+include ':data'
+include ':entity'
+include ':app'
+rootProject.name = "todo-list-clean-architecture"

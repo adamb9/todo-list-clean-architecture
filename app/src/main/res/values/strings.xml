@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">todo-list-clean-architecture</string>
+
+    <string name="sort_priority_HL">Priority (High-Low)</string>
+    <string name="sort_priority_LH">Priority (Low-High)</string>
+    <string name="sort_date_HL">Date Created (New-Old)</string>
+    <string name="sort_date_LH">Date Created (Old-New)</string>
+
+</resources>
