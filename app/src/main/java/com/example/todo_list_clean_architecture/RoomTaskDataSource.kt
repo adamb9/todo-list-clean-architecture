@@ -15,6 +15,8 @@ class RoomTaskDataSource(context: Context): TaskDataSource {
 
     override fun getAll(): List<Task> = taskDao.getTasks().map{ it.toTask() }
 
+    override fun getAllUncomplete(): List<Task> = taskDao.getCompletedTasks().map { it.toTask() }
+
     override fun remove(task: Task) = taskDao.deleteTask(TaskEntity.fromTask(task))
 
 }

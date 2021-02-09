@@ -9,5 +9,7 @@ interface TaskDataSource{
 
     fun getAll(): List<Task>
 
+    fun getAllUncomplete(): List<Task>
+
     fun remove(task: Task)
 }

@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         db = DatabaseService.getInstance(context = this)
         roomTaskDataSource = RoomTaskDataSource(context = this)
 
-        val dbTasks: List<Task>? = roomTaskDataSource?.getAll()
+        val dbTasks: List<Task>? = roomTaskDataSource?.getAllUncomplete()
 
         if (dbTasks != null) {
             for(task in dbTasks){
